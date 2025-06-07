@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: beige;
 }
 
 main {
@@ -12,9 +13,14 @@ main {
 article {
     flex : 2;
     overflow-y: auto;
+    background-color: azure;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 aside {
     flex : 1;
     overflow-y: auto;
+    background: lightgrey;
+    border: 1px solid darkgray;
 }
