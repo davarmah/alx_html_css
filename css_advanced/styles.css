@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #071629;
+    color: white;
+}
+
+header {
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+nav.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+}
+
+nav.logo ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav.logo ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url("../css_advanced/Images/Object.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), #071629);
+  z-index: 1;
+}
+
+.banner > * {
+  z-index: 2;
+}
+
+.banner h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.banner .keywords {
+  display: flex;
+  gap: 30px;
+  margin: 10px 0 20px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.banner button {
+  margin-top: 20px;
+  padding: 14px 32px;
+  background-color: #C271FF;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.banner button:hover {
+  background-color: #a84ded;
+}
+
+
+.learn {
+  margin-top: 60px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.profile {
+  text-align: center;
+  max-width: 180px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.learn h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.learn h2 span {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Source Sans Pro - Regular */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Source Sans Pro - Bold */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Spin Cycle OT */
+@font-face {
+  font-family: 'Spin Cycle OT';
+  src: url('fonts/Spin-Cycle-OT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
