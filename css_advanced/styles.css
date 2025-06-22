@@ -141,6 +141,49 @@ nav.logo ul li a {
   font-weight: bold;
 }
 
+.quote {
+  background-color: #C271FF;
+  padding: 60px 20px;
+  color: white;
+  text-align: left;
+}
+
+.main_quote {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1100px;
+}
+
+.main_quote img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-text {
+  max-width: 600px;
+}
+
+.quote-text blockquote {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.quote-text h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.quote-text p {
+  font-style: italic;
+}
 
 
 
