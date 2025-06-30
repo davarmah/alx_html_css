@@ -185,11 +185,135 @@ nav.logo ul li a {
   font-style: italic;
 }
 
+.tutorial {
+  padding: 60px 20px;
+  background-color: white;
+  color: #071629;
+  text-align: center;
+}
 
+.tutorial h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
 
+.tutorial h2 span {
+  font-weight: bold;
+  color: #C271FF;
+}
 
+.tutorial-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-x: auto; 
+  padding: 0 20px;
+}
 
+.video-card {
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
 
+.image-container {
+  position: relative;
+}
+
+.image-container img.tutorial-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.image-container img.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+}
+
+.video-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.video-info h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.video-info p {
+  font-size: 10px;
+  color: #6c757d;
+  margin-bottom: 12px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author h4 {
+  font-size: 13px;
+  color: #C271FF;
+}
+
+.rating-duration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating-duration img.rating {
+  height: 14px;
+}
+
+.rating-duration span {
+  font-size: 12px;
+  color: #C271FF;
+}
+
+.tutorial h2 span {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+.thumbnail {
+  position: relative;
+  width: 100%;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+.play-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 
 
