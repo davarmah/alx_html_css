@@ -377,8 +377,51 @@ nav.logo ul li a {
   background-color: #a84ded;
 }
 
+.faq {
+  background-color: white;
+  color: black;
+  padding: 80px 20px;
+  text-align: center;
+}
 
+.faq h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+  font-weight: 300;
+}
 
+.faq_container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq_column {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.faq_head h3 {
+  color: #071629;
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.faq_text  {
+  color: #071629;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
 
 
 
