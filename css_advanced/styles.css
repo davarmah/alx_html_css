@@ -315,6 +315,74 @@ nav.logo ul li a {
   object-fit: contain;
 }
 
+.membership {
+  background-color: #071629;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.membership h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+.membership h2 span {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+.m_cards {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+.m_card {
+  max-width: 200px;
+}
+
+.m_card img {
+  width: bold;
+  margin-bottom: 20px;
+}
+
+.m_card h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.m_card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.m_button {
+  padding: 14px 32px;
+  background-color: #C271FF;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.m_button:hover {
+  background-color: #a84ded;
+}
+
+
+
+
+
+
+
 
 
 
