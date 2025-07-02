@@ -423,8 +423,50 @@ nav.logo ul li a {
   text-align: justify;
 }
 
+.footer {
+  background-color: #021529;
+  padding: 50px 20px 20px;
+  color: white;
+  text-align: center;
+}
 
+.footer_all {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
 
+.footer_all img {
+  height: 25px;
+}
+
+.footer_right a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #071629;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.footer-right a:hover {
+  background-color: #C271FF;
+  color: white;
+}
+
+.footer_copy {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+}
 
 
 
