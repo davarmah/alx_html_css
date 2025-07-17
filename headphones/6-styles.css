@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #FF6565;
+  --max-content-width: 1000px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white; 
+}
+
+header {
+  background: url('../headphones/images/headphones_hero_1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+nav.logo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.logo img {
+  height: 40px;
+}
+
+nav.logo ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav.logo ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav.logo ul li a:hover,
+nav.logo ul li a:active {
+  color: var(--primary-color);
+}
+
+header > div {
+  max-width: var(--max-content-width);
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+header h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: opacity 0.3s ease;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.what_we_do {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.what_we_do h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.what_we_do > p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.service {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 20px;
+}
+
+.service i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.service h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.results {
+  padding: 100px 20px 50px;
+  background: url('../headphones/images/headphones_hero_2.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+}
+
+.results h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.results p {
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.results-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding-bottom: 60px;
+}
+
+.result-card {
+width: 120px;
+flex-shrink: 0;
+}
+
+.result-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.image-container {
+  position: relative;
+}
+
+.result-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.result-pentagon {
+  position: relative;
+  width: 120px;
+  height: auto;
+}
+
+.pentagon-shape {
+  width: 120px;
+  height: 120px;
+  background-color: var(--primary-color);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  position: relative;
+  z-index: 1;
+}
+
+.result-pentagon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.result-inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.result-inside h3 {
+  font-size: 1.0 rem;
+  font-weight: bold;
+  margin: 4px 0;
+  line-height: 1.1;
+}
+
+.result-inside p {
+  font-size: 0.65rem;
+  margin: 0;
+  line-height: 1;
+}
+
+.contact-us {
+  background-color:white;
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-container h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 65%;
+  padding: 12px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-button {
+  background-color: #ff6565;
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #ff4a4a;
+}
+
+.footer {
+  background-color: #071629;
+  padding: 50px 20px 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer_all {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.footer_all img {
+  height: 25px;
+}
+
+.footer_right a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #071629;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+  font-size: 40px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.footer_copy {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  nav.logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav.logo ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h3 {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+    .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 100%;
+  }
+    .results {
+    padding: 40px 10px 30px;
+  }
+
+  .results h2 {
+    font-size: 20px;
+  }
+
+  .results p {
+    font-size: 13px;
+  }
+
+  .result-card {
+    width: 90px;
+  }
+
+  .result-inside {
+    width: 80px;
+  }
+
+  .result-inside h3 {
+    font-size: 1rem;
+  }
+
+  .result-inside p {
+    font-size: 0.6rem;
+  }
+    .contact-form {
+    padding: 0 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    margin-top: 20px;
+  }
+    .footer_all {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_right {
+    margin-top: 20px;
+  }
+
+  .footer_right a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+   .pentagon-shape {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+
+
+/* Source Sans Pro - Regular */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Source Sans Pro - Bold */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Spin Cycle OT */
+@font-face {
+  font-family: 'Spin Cycle OT';
+  src: url('fonts/Spin-Cycle-OT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
